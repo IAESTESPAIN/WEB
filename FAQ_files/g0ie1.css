@@ -1,0 +1,109 @@
+.menu-item-object-language_switcher .trp-flag-image {
+display: inline-block;
+margin: -1px 5px;
+vertical-align: baseline;
+padding: 0;
+border: 0;
+border-radius:0;
+} .trp-language-switcher{
+height: 42px;
+position: relative;
+box-sizing: border-box;
+width: 200px;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
+.trp-language-switcher > div {
+box-sizing: border-box;
+padding:4px 20px 3px 13px;
+border: 1.5px solid #949494;
+border-radius: 2px;
+background-image: url(//iaeste.es/wp-content/plugins/translatepress-multilingual/assets/images/arrow-down-3101.svg);
+background-repeat: no-repeat;
+background-position:
+calc(100% - 20px) calc(1em + 2px),
+calc(100% - 3px) calc(1em + 0px);
+background-size:
+8px 8px,
+8px 8px;
+background-repeat: no-repeat;
+background-color: #fff;
+}
+.trp-language-switcher > div:hover {
+background-image: none;
+}
+.trp-language-switcher > div > a {
+display: block;
+padding: 7px 12px;
+border-radius: 3px;
+text-decoration: none;
+color: #1E1E1E;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+}
+.trp-language-switcher > div > a:hover {
+background: #F0F0F0;
+border-radius: 2px;
+}
+.trp-language-switcher > div > a.trp-ls-shortcode-disabled-language {
+cursor: default;
+}
+.trp-language-switcher > div > a.trp-ls-shortcode-disabled-language:hover {
+background: none;
+}
+.trp-language-switcher > div > a > img{
+display: inline;
+margin: 0 3px;
+width: 18px;
+height: 12px;
+border-radius: 0;
+}
+.trp-language-switcher .trp-ls-shortcode-current-language{
+display: inline-block;
+}
+.trp-language-switcher:focus .trp-ls-shortcode-current-language,
+.trp-language-switcher:hover .trp-ls-shortcode-current-language{
+visibility: hidden;
+}
+.trp-language-switcher .trp-ls-shortcode-language{
+display: inline-block;
+height: 1px;
+overflow: hidden;
+visibility: hidden;
+z-index: 1;
+max-height: 250px;
+overflow-y: auto;
+left: 0;
+top: 0;
+min-height: auto;
+}
+.trp-language-switcher:focus .trp-ls-shortcode-language,
+.trp-language-switcher:hover .trp-ls-shortcode-language{
+visibility: visible;
+max-height: 250px;
+padding: 4px 13px;
+height: auto;
+overflow-y: auto;
+position: absolute;
+left: 0;
+top: 0;
+display: inline-block !important;
+min-height: auto;
+} #wpadminbar #wp-admin-bar-trp_edit_translation .ab-icon:before {
+content: '\f326';
+top: 3px;
+}
+@media screen and ( max-width: 782px ) {
+#wpadminbar #wp-admin-bar-trp_edit_translation > .ab-item {
+text-indent: 0;
+}
+#wpadminbar li#wp-admin-bar-trp_edit_translation {
+display: block;
+}
+} .elementor-shortcode .trp-ls-shortcode-current-language,
+.elementor-shortcode .trp-ls-shortcode-language {
+width: 300px !important;
+}.wp-block-uagb-faq{width:100%}.wp-block-uagb-faq.uagb-faq-layout-accordion .uagb-faq-child__outer-wrap .uagb-faq-questions-button{cursor:pointer}.wp-block-uagb-faq .uagb-faq-content{margin-bottom:0}.wp-block-uagb-faq .uagb-faq-content p{margin:auto}.uagb-faq-layout-grid.uagb-faq-equal-height.uagb-faq__wrap .uagb-faq-child__outer-wrap,.uagb-faq-layout-grid.uagb-faq-equal-height.uagb-faq__wrap .uagb-faq-item{height:100%}body[class*="astra"] .uagb-faq-questions{line-height:normal}.uagb-faq-item{overflow:hidden}
+.wp-block-uagb-faq-child .uagb-faq-questions-button{display:flex;align-items:center}.wp-block-uagb-faq-child .uagb-faq-questions-button .uagb-faq-icon-wrap{display:flex;align-items:center}.wp-block-uagb-faq-child .uagb-faq-questions-button .uagb-question{width:100%;margin-top:0;margin-bottom:0}.wp-block-uagb-faq-child .uagb-icon svg,.wp-block-uagb-faq-child .uagb-icon-active svg{width:15px;height:15px;font-size:15px}.wp-block-uagb-faq-child.uagb-faq-child__outer-wrap.uagb-faq-item .uagb-icon-active,.wp-block-uagb-faq-child.uagb-faq-child__outer-wrap.uagb-faq-item.uagb-faq-item-active .uagb-icon,.wp-block-uagb-faq-child.uagb-faq-child__outer-wrap .uagb-faq-item .uagb-icon-active,.wp-block-uagb-faq-child.uagb-faq-child__outer-wrap .uagb-faq-item.uagb-faq-item-active .uagb-icon{display:none;width:0;padding:0;height:0;margin:0}.wp-block-uagb-faq-child.uagb-faq-child__outer-wrap.uagb-faq-item .uagb-icon,.wp-block-uagb-faq-child.uagb-faq-child__outer-wrap.uagb-faq-item.uagb-faq-item-active .uagb-icon-active,.wp-block-uagb-faq-child.uagb-faq-child__outer-wrap .uagb-faq-item .uagb-icon,.wp-block-uagb-faq-child.uagb-faq-child__outer-wrap .uagb-faq-item.uagb-faq-item-active .uagb-icon-active{display:flex;width:auto;height:auto}.uagb-faq-layout-grid .uagb-faq-child__outer-wrap.uagb-faq-item .uagb-icon,.uagb-faq-layout-grid .uagb-faq-child__outer-wrap.uagb-faq-item.uagb-faq-item-active .uagb-icon-active,.uagb-faq-layout-grid .uagb-faq-child__outer-wrap .uagb-faq-item .uagb-icon,.uagb-faq-layout-grid .uagb-faq-child__outer-wrap .uagb-faq-item.uagb-faq-item-active .uagb-icon-active{display:none}.uagb-faq-layout-grid .uagb-faq-child__outer-wrap.uagb-faq-item span.uagb-icon-active.uagb-faq-icon-wrap,.uagb-faq-layout-grid .uagb-faq-child__outer-wrap.uagb-faq-item.uagb-faq-item-active .uagb-icon-active,.uagb-faq-layout-grid .uagb-faq-child__outer-wrap .uagb-faq-item span.uagb-icon-active.uagb-faq-icon-wrap,.uagb-faq-layout-grid .uagb-faq-child__outer-wrap .uagb-faq-item.uagb-faq-item-active .uagb-icon-active{display:none}
+.uagb-block-f982d96e .uagb-icon svg{width: 12px;height: 12px;font-size: 12px;}.uagb-block-f982d96e .uagb-icon-active svg{width: 12px;height: 12px;font-size: 12px;}.uagb-block-f982d96e .uagb-faq-child__outer-wrap{margin-bottom: 10px;}.uagb-block-f982d96e .uagb-faq-item{border-top-width: 1px;border-left-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-left-radius: 2px;border-top-right-radius: 2px;border-bottom-left-radius: 2px;border-bottom-right-radius: 2px;border-color: #D2D2D2;border-style: solid;}.uagb-block-f982d96e .uagb-faq-questions-button{padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;}.uagb-block-f982d96e .uagb-faq-content{padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;}.uagb-block-f982d96e .uagb-faq-content span{margin-top: 10px;margin-bottom: 10px;margin-right: 10px;margin-left: 10px;}.uagb-block-f982d96e.uagb-faq-icon-row .uagb-faq-item .uagb-faq-icon-wrap{margin-right: 10px;}.uagb-block-f982d96e.uagb-faq-icon-row-reverse .uagb-faq-item .uagb-faq-icon-wrap{margin-left: 10px;}.uagb-block-f982d96e .uagb-faq-item .uagb-faq-questions-button.uagb-faq-questions{flex-direction: row;}.uagb-block-f982d96e .wp-block-uagb-faq-child.uagb-faq-child__outer-wrap .uagb-faq-content {display: none;}.uagb-block-3c1ac74c .uagb-icon svg{width: 12px;height: 12px;font-size: 12px;}.uagb-block-3c1ac74c .uagb-icon-active svg{width: 12px;height: 12px;font-size: 12px;}.uagb-block-3c1ac74c .uagb-faq-child__outer-wrap{margin-bottom: 10px;}.uagb-block-3c1ac74c .uagb-faq-item{border-top-width: 1px;border-left-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-left-radius: 2px;border-top-right-radius: 2px;border-bottom-left-radius: 2px;border-bottom-right-radius: 2px;border-color: #D2D2D2;border-style: solid;}.uagb-block-3c1ac74c .uagb-faq-questions-button{padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;}.uagb-block-3c1ac74c .uagb-faq-content{padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;}.uagb-block-3c1ac74c .uagb-faq-content span{margin-top: 10px;margin-bottom: 10px;margin-right: 10px;margin-left: 10px;}.uagb-block-3c1ac74c.uagb-faq-icon-row .uagb-faq-item .uagb-faq-icon-wrap{margin-right: 10px;}.uagb-block-3c1ac74c.uagb-faq-icon-row-reverse .uagb-faq-item .uagb-faq-icon-wrap{margin-left: 10px;}.uagb-block-3c1ac74c .uagb-faq-item .uagb-faq-questions-button.uagb-faq-questions{flex-direction: row;}.uagb-block-3c1ac74c .wp-block-uagb-faq-child.uagb-faq-child__outer-wrap .uagb-faq-content {display: none;}.uagb-block-6aa7096a .uagb-icon svg{width: 12px;height: 12px;font-size: 12px;}.uagb-block-6aa7096a .uagb-icon-active svg{width: 12px;height: 12px;font-size: 12px;}.uagb-block-6aa7096a .uagb-faq-child__outer-wrap{margin-bottom: 10px;}.uagb-block-6aa7096a .uagb-faq-item{border-top-width: 1px;border-left-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-top-left-radius: 2px;border-top-right-radius: 2px;border-bottom-left-radius: 2px;border-bottom-right-radius: 2px;border-color: #D2D2D2;border-style: solid;}.uagb-block-6aa7096a .uagb-faq-questions-button{padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;}.uagb-block-6aa7096a .uagb-faq-content{padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;}.uagb-block-6aa7096a .uagb-faq-content span{margin-top: 10px;margin-bottom: 10px;margin-right: 10px;margin-left: 10px;}.uagb-block-6aa7096a.uagb-faq-icon-row .uagb-faq-item .uagb-faq-icon-wrap{margin-right: 10px;}.uagb-block-6aa7096a.uagb-faq-icon-row-reverse .uagb-faq-item .uagb-faq-icon-wrap{margin-left: 10px;}.uagb-block-6aa7096a .uagb-faq-item .uagb-faq-questions-button.uagb-faq-questions{flex-direction: row;}.uagb-block-6aa7096a .wp-block-uagb-faq-child.uagb-faq-child__outer-wrap .uagb-faq-content {display: none;}@media only screen and (max-width: 976px) {.uagb-block-f982d96e.uagb-faq-icon-row .uagb-faq-item .uagb-faq-icon-wrap{margin-right: 10px;}.uagb-block-f982d96e.uagb-faq-icon-row-reverse .uagb-faq-item .uagb-faq-icon-wrap{margin-left: 10px;}.uagb-block-f982d96e .uagb-faq-questions-button{padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;}.uagb-block-f982d96e .uagb-faq-content{padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;}.uagb-block-f982d96e .uagb-faq-content span{margin-top: 10px;margin-bottom: 10px;margin-right: 10px;margin-left: 10px;}.uagb-block-f982d96e .uagb-faq-item{border-style: solid;border-color: #D2D2D2;}.uagb-block-3c1ac74c.uagb-faq-icon-row .uagb-faq-item .uagb-faq-icon-wrap{margin-right: 10px;}.uagb-block-3c1ac74c.uagb-faq-icon-row-reverse .uagb-faq-item .uagb-faq-icon-wrap{margin-left: 10px;}.uagb-block-3c1ac74c .uagb-faq-questions-button{padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;}.uagb-block-3c1ac74c .uagb-faq-content{padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;}.uagb-block-3c1ac74c .uagb-faq-content span{margin-top: 10px;margin-bottom: 10px;margin-right: 10px;margin-left: 10px;}.uagb-block-3c1ac74c .uagb-faq-item{border-style: solid;border-color: #D2D2D2;}.uagb-block-6aa7096a.uagb-faq-icon-row .uagb-faq-item .uagb-faq-icon-wrap{margin-right: 10px;}.uagb-block-6aa7096a.uagb-faq-icon-row-reverse .uagb-faq-item .uagb-faq-icon-wrap{margin-left: 10px;}.uagb-block-6aa7096a .uagb-faq-questions-button{padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;}.uagb-block-6aa7096a .uagb-faq-content{padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;}.uagb-block-6aa7096a .uagb-faq-content span{margin-top: 10px;margin-bottom: 10px;margin-right: 10px;margin-left: 10px;}.uagb-block-6aa7096a .uagb-faq-item{border-style: solid;border-color: #D2D2D2;}}@media only screen and (max-width: 767px) {.uagb-block-f982d96e.uagb-faq-icon-row .uagb-faq-item .uagb-faq-icon-wrap{margin-right: 10px;}.uagb-block-f982d96e .uagb-faq-item{border-style: solid;border-color: #D2D2D2;}.uagb-block-f982d96e.uagb-faq-icon-row-reverse .uagb-faq-item .uagb-faq-icon-wrap{margin-left: 10px;}.uagb-block-f982d96e .uagb-faq-questions-button{padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;}.uagb-block-f982d96e .uagb-faq-content{padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;}.uagb-block-f982d96e .uagb-faq-content span{margin-top: 10px;margin-bottom: 10px;margin-right: 10px;margin-left: 10px;}.uagb-block-3c1ac74c.uagb-faq-icon-row .uagb-faq-item .uagb-faq-icon-wrap{margin-right: 10px;}.uagb-block-3c1ac74c .uagb-faq-item{border-style: solid;border-color: #D2D2D2;}.uagb-block-3c1ac74c.uagb-faq-icon-row-reverse .uagb-faq-item .uagb-faq-icon-wrap{margin-left: 10px;}.uagb-block-3c1ac74c .uagb-faq-questions-button{padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;}.uagb-block-3c1ac74c .uagb-faq-content{padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;}.uagb-block-3c1ac74c .uagb-faq-content span{margin-top: 10px;margin-bottom: 10px;margin-right: 10px;margin-left: 10px;}.uagb-block-6aa7096a.uagb-faq-icon-row .uagb-faq-item .uagb-faq-icon-wrap{margin-right: 10px;}.uagb-block-6aa7096a .uagb-faq-item{border-style: solid;border-color: #D2D2D2;}.uagb-block-6aa7096a.uagb-faq-icon-row-reverse .uagb-faq-item .uagb-faq-icon-wrap{margin-left: 10px;}.uagb-block-6aa7096a .uagb-faq-questions-button{padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;}.uagb-block-6aa7096a .uagb-faq-content{padding-top: 10px;padding-bottom: 10px;padding-right: 10px;padding-left: 10px;}.uagb-block-6aa7096a .uagb-faq-content span{margin-top: 10px;margin-bottom: 10px;margin-right: 10px;margin-left: 10px;}}.uag-blocks-common-selector{z-index:var(--z-index-desktop) !important}@media (max-width: 976px){.uag-blocks-common-selector{z-index:var(--z-index-tablet) !important}}@media (max-width: 767px){.uag-blocks-common-selector{z-index:var(--z-index-mobile) !important}}
