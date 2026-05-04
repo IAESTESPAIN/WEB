@@ -673,7 +673,7 @@ tr.trp-language td{
 }
 
 .trp-sortable-handle{
-    background: url(/wp-content/plugins/translatepress-multilingual/assets/images/sorting-icon-dots.png) no-repeat center center; /* Added for backwards compatibility with pre-redesign TP Pro versions */
+    background: url(./../images/sorting-icon-dots.png) no-repeat center center; /* Added for backwards compatibility with pre-redesign TP Pro versions */
     width: 16px;
     height: 16px;
     display: inline-block;

@@ -86,7 +86,7 @@
 	font-style:italic;
 }
 .fmError::before{
-	content:url('/wp-content/plugins/wp-file-manager/css/images/warning-icon.png');
+	content:url('./images/warning-icon.png');
 	position:absolute;
 	left:15px;
 }
