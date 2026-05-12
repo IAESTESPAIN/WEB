@@ -113,6 +113,17 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 <link rel="stylesheet" id="trp-language-switcher-style-css" href="./../wp-content/plugins/translatepress-multilingual/assets/css/trp-language-switcher.css?ver=3.1.8" media="all">
 <link rel="stylesheet" id="uag-style-89-css" href="./../wp-content/uploads/uag-plugin/assets/0/uag-css-89.css?ver=1777927326" media="all">
+<style id="contacto-mailto-inline-css">
+	.contacto-form-wrapper{margin-top:2rem;margin-bottom:3rem;}
+	.contacto-mailto-form{max-width:640px;margin:0 auto;}
+	.contacto-field{margin-bottom:1rem;}
+	.contacto-field label{display:block;margin-bottom:0.35rem;font-weight:600;color:var(--ast-global-color-2);}
+	.contacto-mailto-form input,.contacto-mailto-form textarea{width:100%;}
+	.contacto-mailto-form textarea{min-height:160px;resize:vertical;}
+	.contacto-disclaimer{font-size:0.95rem;color:var(--ast-global-color-3);margin-top:0.5rem;}
+	.contacto-submit{width:100%;border-radius:35px;}
+	.contacto-mailto-hint{margin-top:0.75rem;color:var(--ast-global-color-3);}
+</style>
 <link rel="https://api.w.org/" href="./../wp-json/index.html"><link rel="alternate" title="JSON" type="application/json" href="./../wp-json/wp/v2/pages/89/index.html"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../xmlrpc.php?rsd">
 <meta name="generator" content="WordPress 6.9.4">
 <link rel="canonical" href="./index.html">
@@ -459,130 +470,24 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 </div>
 
 
-<div data-test="contact-form" id="contact-form-89" class="jetpack-contact-form-container " data-wp-interactive="jetpack/form" data-wp-context='{"formId":"89","formHash":"0a5a36b6539e8e0538824a554ac60cf330962178","showErrors":false,"errors":[],"fields":[],"isMultiStep":false,"useAjax":true,"submissionData":null,"formattedSubmissionData":[],"submissionSuccess":false,"submissionError":null,"elementId":"jp-form-0a5a36b6539e8e0538824a554ac60cf330962178","isSingleInputForm":false,"isForcedHorizontal":false}' data-wp-watch--scroll-to-wrapper="callbacks.scrollToWrapper">
-<div class="contact-form-submission contact-form-ajax-submission" data-wp-bind--aria-hidden="state.isSuccessMessageAriaHidden" data-wp-class--submission-success="context.submissionSuccess" id="contact-form-success-0a5a36b6539e8e0538824a554ac60cf330962178" tabindex="-1" aria-labelledby="contact-form-success-header-0a5a36b6539e8e0538824a554ac60cf330962178"><p class="go-back-message"><a class="link" role="button" tabindex="0" data-wp-on--click="actions.goBack" href="./index.html">← Volver</a></p><h4 data-wp-bind--aria-hidden="state.isSuccessMessageAriaHidden" id="contact-form-success-header-0a5a36b6539e8e0538824a554ac60cf330962178">Gracias por tu respuesta. ✨</h4>
-
-<template data-wp-each--submission="context.formattedSubmissionData">
-					<div class="jetpack_forms_contact-form-success-summary">
-						<div class="field-name-wrapper">
-							<div class="field-type-icon" data-wp-watch="callbacks.watchFieldTypeIcon"></div>
-							<div class="field-name" data-wp-text="context.submission.label" data-wp-bind--hidden="!context.submission.label"></div>
-						</div>
-						<div class="field-value" data-wp-text="context.submission.value" data-wp-bind--hidden="!context.submission.showPlainValue"></div>
-						<a class="field-url" data-wp-bind--href="context.submission.url" data-wp-text="context.submission.value" data-wp-bind--hidden="!context.submission.url" target="_blank" rel="noopener noreferrer"></a>
-						<div class="field-rating" data-wp-bind--hidden="!context.submission.rating" data-wp-watch="callbacks.watchRatingIcons"></div>
-						<div class="field-images" data-wp-bind--hidden="!context.submission.images">
-							<template data-wp-each--image="context.submission.images">
-								<div class="field-image-option" data-wp-class--is-empty="!context.image.src">
-									<figure class="field-image-option__image" data-wp-class--is-empty="!context.image.src">
-										<img data-wp-bind--src="context.image.src" data-wp-bind--hidden="!context.image.src">
-										<img decoding="async" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-wp-bind--hidden="context.image.src">
-									</figure>
-									<div class="field-image-option__label-wrapper">
-										<span class="field-image-option__label-code" data-wp-text="context.image.letterCode"></span>
-										<span class="field-image-option__label" data-wp-text="context.image.label" data-wp-bind--hidden="!context.image.label"></span>
-									</div>
-								</div>
-							</template>
-						</div>
-						<div class="field-files" data-wp-bind--hidden="!context.submission.files">
-							<template data-wp-each--file="context.submission.files">
-								<div class="field-file">
-									<div class="field-file__thumbnail" data-wp-style--background-image="context.file.previewUrl" data-wp-style--mask-image="context.file.iconUrl" data-wp-bind--hidden="!context.file.hasPreview"></div>
-									<svg class="field-file__icon" data-wp-bind--hidden="context.file.hasPreview" width="20" height="20" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-										<path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.89 22 5.99 22H18C19.1 22 20 21.1 20 20V8L14 2ZM18 20H6V4H13V9H18V20Z" fill="currentColor"></path>
-									</svg>
-									<span class="field-file__name" data-wp-text="context.file.name"></span>
-									<span class="field-file__size" data-wp-text="context.file.size"></span>
-								</div>
-							</template>
-						</div>
-					</div>
-				</template></div><form action=".//contacto/" id="jp-form-0a5a36b6539e8e0538824a554ac60cf330962178" method="post" class="contact-form commentsblock jetpack-contact-form__form has-no-jetpack-form-layout" aria-label="Contacto" data-wp-on--submit="actions.onFormSubmit" data-wp-on--reset="actions.onFormReset" data-wp-class--submission-success="context.submissionSuccess" data-wp-class--is-first-step="state.isFirstStep" data-wp-class--is-last-step="state.isLastStep" data-wp-class--is-ajax-form="context.useAjax" novalidate>
-<input type="hidden" name="jetpack_contact_form_jwt" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbmNyeXB0ZWRfYXR0cmlidXRlcyI6IkQwdFBnMEZWOFB5NVI1MFM5aFVOaFNpTytYUlNPU28zVS9zanBwd285Zk5HSG9NaXNlSG9UNFJ1bWlSVXVBYk1wMU92V01UbTRaeS9xRU9FeTc1eFZkSHl5SmtHQ21mTjhYL2NlRWkzbVAra3UwREFBSDJDcm1pakQ4UnR2SGMvS2V0SjVXQ051bi9pVWRDakNrcElvN2hYWWJSZ0hZWDZuTmtxdGl3RzE2c0R4cmdETWFUUWNkUU5mSTRLbmRPN3V2ekZFMTRUeDJtNDB4OU9RaCttcjBLMlRpUm5sU0VvK2Z0S3Y5VUhycWFKY0tBbzViY3JVSWQrOTRuOGx1ajljaU1wYkw3cjBnSTIzM3lPeDB4TC9CczN2U1JsMWZrNjdiQU5IdjErZ0VXczZWRjJ0eUdyTWNPOXpTeVAzR3lsRkMxRldwZHc0QkRSdFo0cHBCR0ZKSzFhZkNGdmF5UU1NNEMrZUpLM0dCSDF2VDlSb2g2QXBnV2MvZGdZSTUrYVNaemZhOVAyV2hIMVVhbDhlbm5FN3k5YlRIdjVPMmZDR1haTmtjZmQwUWEzRkZPT1ZEcTNmVGNGQXVEUS91R016L2w4Yk1SWWp0L1UxV01UNDdFd0RhMHhZamVXSlpPRCtQdlpldlcwN1RhOFkxU3RWRFVDQ1BURVBZaEhzUE56RG13YjRadU9UbmFGcWNpOEQwNE1hRzkrSDM3NzZXMkxHclVBOXRnVnRtK0NrQ1UxMUk3R1ZzZkUwY0pCbzRBWHltUy9USWlHUGE5T1NFaWNNblZSSSsyaXZnMG8ydGpvSnhOdnJyRkN0SW5uTEUwdlAyVnJFZ2ZxUFRMczF2ekk5NkZWUnBENWVJZHptQ0R3M1NBM0xTdllVV2VBTXMwcCs1enpjZFRidUt6c1ozOVh4dWkrM3RINWR5ZXRidWtxWG9waTl1aGp2UnlBcmZTbEZpY005VVRWRU13NmpweGF6NVFHRm5oNHI3QW9tOVg2em5reDBBdmgyK2VhQkZuU2Q2bE91TUZ4cUFDeU92eTg3bG5ON3FJTXdDbmJqbTIxSFFEMkdRSHh2dDF4b2Vwc2s1VFZscUFvc2VXemdOendrWFpPWjV1d0V3U3Y2eUdRYVBhYXhOMEVkTDJHRDFYVVZISEJLZFd1dW5OWTdpbDVreUg2My9WSXFUMVVIR3BwR0VOSExBPT0iLCJjb250ZW50IjoiXG48ZGl2IGNsYXNzPVwid3AtYmxvY2stamV0cGFjay1jb250YWN0LWZvcm0gaXMtc3R5bGUtYW5pbWF0ZWRcIiBzdHlsZT1cInBhZGRpbmctdG9wOjE2cHg7cGFkZGluZy1yaWdodDoxNnB4O3BhZGRpbmctYm90dG9tOjE2cHg7cGFkZGluZy1sZWZ0OjE2cHhcIj5bY29udGFjdC1maWVsZCBsYWJlbD1cIk5vbWJyZVwiIHJlcXVpcmVkPVwiMVwiIFRycENvbnRlbnRSZXN0cmljdGlvbj1cImV4Y2x1ZGUsLDFcIiB0eXBlPVwibmFtZVwiL11cblxuW2NvbnRhY3QtZmllbGQgcmVxdWlyZWQ9XCIxXCIgVHJwQ29udGVudFJlc3RyaWN0aW9uPVwiZXhjbHVkZSwsMVwiIHR5cGU9XCJlbWFpbFwiIGxhYmVsPVwiQ29ycmVvIGVsZWN0clx1MDBmM25pY29cIi9dXG5cbltjb250YWN0LWZpZWxkIGxhYmVsPVwiTWVuc2FqZVwiIFRycENvbnRlbnRSZXN0cmljdGlvbj1cImV4Y2x1ZGUsLDFcIiB0eXBlPVwidGV4dGFyZWFcIi9dXG5cblxuPHA-WW91IGFncmVlIHRvIHJlY2VpdmUgZW1haWwgY29tbXVuaWNhdGlvbiBmcm9tIHVzIGJ5IHN1Ym1pdHRpbmcgdGhpcyBmb3JtIGFuZCB1bmRlcnN0YW5kIHRoYXQgeW91ciBjb250YWN0IGluZm9ybWF0aW9uIHdpbGwgYmUgc3RvcmVkIHdpdGggdXM8L3A-XG5cblxuPGRpdiBjbGFzcz1cIndwLWJsb2NrLWpldHBhY2stYnV0dG9uIHdwLWJsb2NrLWJ1dHRvblwiIHN0eWxlPVwid2lkdGg6IDEwMCU7XCI-PGJ1dHRvbiBjbGFzcz1cIndwLWJsb2NrLWJ1dHRvbl9fbGluayBoYXMtbWVkaXVtLWZvbnQtc2l6ZSBoYXMtY3VzdG9tLWZvbnQtc2l6ZVwiIHN0eWxlPVwiYm9yZGVyLXJhZGl1czogMzVweDtcIiBkYXRhLWlkLWF0dHI9XCJwbGFjZWhvbGRlclwiIHR5cGU9XCJzdWJtaXRcIiBkYXRhLXdwLWNsYXNzLS1pcy1zdWJtaXR0aW5nPVwic3RhdGUuaXNTdWJtaXR0aW5nXCIgZGF0YS13cC1iaW5kLS1hcmlhLWRpc2FibGVkPVwic3RhdGUuaXNBcmlhRGlzYWJsZWRcIj5FTlZJQVI8c3BhbiBjbGFzcz1cInNwaW5uZXJcIiBhcmlhLWhpZGRlbj1cInRydWVcIj48c3ZnIHdpZHRoPVwiMjRcIiBoZWlnaHQ9XCIyNFwiIHZpZXdCb3g9XCIwIDAgMjQgMjRcIiB4bWxucz1cImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnXCI-PHBhdGggZD1cIk0xMiwxQTExLDExLDAsMSwwLDIzLDEyLDExLDExLDAsMCwwLDEyLDFabTAsMTlhOCw4LDAsMSwxLDgtOEE4LDgsMCwwLDEsMTIsMjBaXCIgb3BhY2l0eT1cIi4yNVwiLz48cGF0aCBkPVwiTTEwLjE0LDEuMTZhMTEsMTEsMCwwLDAtOSw4LjkyQTEuNTksMS41OSwwLDAsMCwyLjQ2LDEyLDEuNTIsMS41MiwwLDAsMCw0LjExLDEwLjdhOCw4LDAsMCwxLDYuNjYtNi42MUExLjQyLDEuNDIsMCwwLDAsMTIsMi42OWgwQTEuNTcsMS41NywwLDAsMCwxMC4xNCwxLjE2WlwiPjxhbmltYXRlVHJhbnNmb3JtIGF0dHJpYnV0ZU5hbWU9XCJ0cmFuc2Zvcm1cIiB0eXBlPVwicm90YXRlXCIgZHVyPVwiMC43NXNcIiB2YWx1ZXM9XCIwIDEyIDEyOzM2MCAxMiAxMlwiIHJlcGVhdENvdW50PVwiaW5kZWZpbml0ZVwiLz48L3BhdGg-PC9zdmc-PHNwYW4gY2xhc3M9XCJpcy12aXN1YWxseS1oaWRkZW5cIj5FbnZpYW5kbyBmb3JtdWxhcmlvPC9zcGFuPjwvc3Bhbj48L2J1dHRvbj48L2Rpdj48L2Rpdj5cbiIsImhhc2giOiIwYTVhMzZiNjUzOWU4ZTA1Mzg4MjRhNTU0YWM2MGNmMzMwOTYyMTc4Iiwic291cmNlIjp7ImVudHJ5X3RpdGxlIjoiQ29udGFjdG8iLCJlbnRyeV9wYWdlIjoxLCJzb3VyY2VfaWQiOjg5LCJzb3VyY2VfdHlwZSI6InNpbmdsZSIsInJlcXVlc3RfdXJsIjoiaHR0cHM6Ly9pYWVzdGUuZXMvY29udGFjdG8ifSwidmVyc2lvbiI6MiwiY2lwaGVyIjoiYWVzLTI1Ni1nY20ifQ.gJqycVBJZlWSgrLSIOwpRuGgz9t0ZyctBs9Wbp5PAU4">
-
-<div class="wp-block-jetpack-contact-form is-style-animated is-layout-flex wp-container-jetpack-contact-form-is-layout-b7ed9015 wp-block-jetpack-contact-form-is-layout-flex" style="padding-top:16px;padding-right:16px;padding-bottom:16px;padding-left:16px">
-<div class="contact-form__inset-label-wrap" data-wp-interactive="jetpack/form" data-wp-context='{"fieldId":"g89-nombre","fieldType":"name","fieldLabel":"Nombre","fieldValue":"","fieldPlaceholder":"","fieldIsRequired":"1","fieldErrorMessage":"","fieldExtra":[],"formHash":"0a5a36b6539e8e0538824a554ac60cf330962178"}'>
-
-<div style="" class="grunion-field-name-wrap grunion-field-wrap" data-wp-init="callbacks.initializeField" data-wp-on--jetpack-form-reset="callbacks.initializeField">
-
-			<label for="g89-nombre" class="animated-label__label" style="">
-				<span class="grunion-label-text">Nombre</span><span class="grunion-label-required" aria-hidden="true">(obligatorio)</span></label><input type="text" name="g89-nombre" id="g89-nombre" value="" data-wp-bind--aria-invalid="state.fieldAriaInvalid" data-wp-bind--value="state.getFieldValue" aria-describedby="g89-nombre-text-error-message" data-wp-on--input="actions.onFieldChange" data-wp-on--blur="actions.onFieldBlur" data-wp-class--has-value="state.hasFieldValue" class="name  grunion-field" required="true" aria-required="true">
-  
-	</div>
-
-			<div id="g89-nombre-name-error" class="contact-form__input-error" data-wp-class--has-errors="state.fieldHasErrors">
-				<span class="contact-form__warning-icon" aria-hidden="true">
-					<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M8.50015 11.6402H7.50015V10.6402H8.50015V11.6402Z"></path>
-						<path d="M7.50015 9.64018H8.50015V6.30684H7.50015V9.64018Z"></path>
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M6.98331 3.0947C7.42933 2.30177 8.57096 2.30177 9.01698 3.09469L13.8771 11.7349C14.3145 12.5126 13.7525 13.4735 12.8602 13.4735H3.14004C2.24774 13.4735 1.68575 12.5126 2.12321 11.7349L6.98331 3.0947ZM8.14541 3.58496C8.08169 3.47168 7.9186 3.47168 7.85488 3.58496L2.99478 12.2251C2.93229 12.3362 3.01257 12.4735 3.14004 12.4735H12.8602C12.9877 12.4735 13.068 12.3362 13.0055 12.2251L8.14541 3.58496Z"></path>
-					</svg>
-				</span>
-				<span data-wp-text="state.errorMessage" id="g89-nombre-name-error-message"></span>
-			</div>	</div>
-
-
-
-<div class="contact-form__inset-label-wrap" data-wp-interactive="jetpack/form" data-wp-context='{"fieldId":"g89-correoelectrnico","fieldType":"email","fieldLabel":"Correo electr\u00f3nico","fieldValue":"","fieldPlaceholder":"","fieldIsRequired":"1","fieldErrorMessage":"","fieldExtra":[],"formHash":"0a5a36b6539e8e0538824a554ac60cf330962178"}'>
-
-<div style="" class="grunion-field-email-wrap grunion-field-wrap" data-wp-init="callbacks.initializeField" data-wp-on--jetpack-form-reset="callbacks.initializeField">
-
-			<label for="g89-correoelectrnico" class="animated-label__label" style="">
-				<span class="grunion-label-text">Correo electrónico</span><span class="grunion-label-required" aria-hidden="true">(obligatorio)</span></label><input type="email" name="g89-correoelectrnico" id="g89-correoelectrnico" value="" data-wp-bind--aria-invalid="state.fieldAriaInvalid" data-wp-bind--value="state.getFieldValue" aria-describedby="g89-correoelectrnico-email-error-message" data-wp-on--input="actions.onFieldChange" data-wp-on--blur="actions.onFieldBlur" data-wp-class--has-value="state.hasFieldValue" class="email  grunion-field" required="true" aria-required="true">
-  
-	</div>
-
-			<div id="g89-correoelectrnico-email-error" class="contact-form__input-error" data-wp-class--has-errors="state.fieldHasErrors">
-				<span class="contact-form__warning-icon" aria-hidden="true">
-					<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M8.50015 11.6402H7.50015V10.6402H8.50015V11.6402Z"></path>
-						<path d="M7.50015 9.64018H8.50015V6.30684H7.50015V9.64018Z"></path>
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M6.98331 3.0947C7.42933 2.30177 8.57096 2.30177 9.01698 3.09469L13.8771 11.7349C14.3145 12.5126 13.7525 13.4735 12.8602 13.4735H3.14004C2.24774 13.4735 1.68575 12.5126 2.12321 11.7349L6.98331 3.0947ZM8.14541 3.58496C8.08169 3.47168 7.9186 3.47168 7.85488 3.58496L2.99478 12.2251C2.93229 12.3362 3.01257 12.4735 3.14004 12.4735H12.8602C12.9877 12.4735 13.068 12.3362 13.0055 12.2251L8.14541 3.58496Z"></path>
-					</svg>
-				</span>
-				<span data-wp-text="state.errorMessage" id="g89-correoelectrnico-email-error-message"></span>
-			</div>	</div>
-
-
-
-<div class="contact-form__inset-label-wrap" data-wp-interactive="jetpack/form" data-wp-context='{"fieldId":"g89-mensaje","fieldType":"textarea","fieldLabel":"Mensaje","fieldValue":"","fieldPlaceholder":"","fieldIsRequired":"","fieldErrorMessage":"","fieldExtra":[],"formHash":"0a5a36b6539e8e0538824a554ac60cf330962178"}'>
-
-<div style="" class="grunion-field-textarea-wrap grunion-field-wrap" data-wp-init="callbacks.initializeField" data-wp-on--jetpack-form-reset="callbacks.initializeField">
-
-			<label for="contact-form-comment-g89-mensaje" class="animated-label__label" style="">
-				<span class="grunion-label-text">Mensaje</span></label><textarea style="" name="g89-mensaje" id="contact-form-comment-g89-mensaje" rows="20" data-wp-text="state.getFieldValue" data-wp-on--input="actions.onFieldChange" data-wp-on--blur="actions.onFieldBlur" data-wp-class--has-value="state.hasFieldValue" aria-describedby="g89-mensaje-textarea-error-message" data-wp-bind--aria-invalid="state.fieldAriaInvalid" class="textarea  grunion-field"></textarea>
- 
-	</div>
-
-			<div id="g89-mensaje-textarea-error" class="contact-form__input-error" data-wp-class--has-errors="state.fieldHasErrors">
-				<span class="contact-form__warning-icon" aria-hidden="true">
-					<svg width="16" height="16" viewbox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M8.50015 11.6402H7.50015V10.6402H8.50015V11.6402Z"></path>
-						<path d="M7.50015 9.64018H8.50015V6.30684H7.50015V9.64018Z"></path>
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M6.98331 3.0947C7.42933 2.30177 8.57096 2.30177 9.01698 3.09469L13.8771 11.7349C14.3145 12.5126 13.7525 13.4735 12.8602 13.4735H3.14004C2.24774 13.4735 1.68575 12.5126 2.12321 11.7349L6.98331 3.0947ZM8.14541 3.58496C8.08169 3.47168 7.9186 3.47168 7.85488 3.58496L2.99478 12.2251C2.93229 12.3362 3.01257 12.4735 3.14004 12.4735H12.8602C12.9877 12.4735 13.068 12.3362 13.0055 12.2251L8.14541 3.58496Z"></path>
-					</svg>
-				</span>
-				<span data-wp-text="state.errorMessage" id="g89-mensaje-textarea-error-message"></span>
-			</div>	</div>
-
-
-
-<p>You agree to receive email communication from us by submitting this form and understand that your contact information will be stored with us</p>
-
-
-<div class="contact-form__error" data-wp-class--show-errors="state.showFormErrors"><span class="contact-form__warning-icon" aria-hidden="true"><i></i></span><span class="contact-form__error-message" tabindex="-1" data-wp-watch="callbacks.focusOnValidationError" data-wp-text="state.getFormErrorMessage"></span><ul aria-label="Errores del formulario">
-				<template data-wp-each="state.getErrorList" data-wp-key="context.item.id">
-					<li><a data-wp-bind--href="context.item.anchor" data-wp-on--click="actions.scrollIntoView" data-wp-text="context.item.label"></a></li>
-				</template>
-				</ul></div><div class="contact-form__error" data-wp-class--show-errors="state.showSubmissionError" data-wp-text="context.submissionError" tabindex="-1" data-wp-watch="callbacks.focusOnSubmissionError"></div> <div class="wp-block-jetpack-button wp-block-button" style="width: 100%;"><button data-wp-bind--disabled="state.isAriaDisabled" class="wp-block-button__link has-medium-font-size has-custom-font-size" style="border-radius: 35px;" data-id-attr="placeholder" type="submit" data-wp-class--is-submitting="state.isSubmitting" data-wp-bind--aria-disabled="state.isAriaDisabled">ENVIAR<span class="spinner" aria-hidden="true"><svg width="24" height="24" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity=".25"></path><path d="M10.14,1.16a11,11,0,0,0-9,8.92A1.59,1.59,0,0,0,2.46,12,1.52,1.52,0,0,0,4.11,10.7a8,8,0,0,1,6.66-6.61A1.42,1.42,0,0,0,12,2.69h0A1.57,1.57,0,0,0,10.14,1.16Z"><animatetransform attributename="transform" type="rotate" dur="0.75s" values="0 12 12;360 12 12" repeatcount="indefinite"></animatetransform></path></svg><span class="is-visually-hidden">Enviando formulario</span></span></button></div></div>
-		<input type="hidden" name="contact-form-id" value="89">
-		<input type="hidden" name="action" value="grunion-contact-form">
-		<input type="hidden" name="contact-form-hash" value="0a5a36b6539e8e0538824a554ac60cf330962178">
-<p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>Δ<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="229"><script>
-document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );
-</script>
-</p></form>
+<div class="contacto-form-wrapper">
+	<form id="contacto-mailto-form" class="contacto-mailto-form" novalidate>
+		<div class="contacto-field">
+			<label for="contacto-nombre">Nombre</label>
+			<input type="text" id="contacto-nombre" name="nombre" autocomplete="name" required>
+		</div>
+		<div class="contacto-field">
+			<label for="contacto-email">Correo electrónico</label>
+			<input type="email" id="contacto-email" name="email" autocomplete="email" required>
+		</div>
+		<div class="contacto-field">
+			<label for="contacto-mensaje">Mensaje</label>
+			<textarea id="contacto-mensaje" name="mensaje" rows="8" required></textarea>
+		</div>
+		<p class="contacto-disclaimer">Al enviar este formulario se abrirá tu cliente de correo para completar el envío.</p>
+		<button class="ast-button contacto-submit" type="submit">Enviar</button>
+	</form>
+	<p class="contacto-mailto-hint" id="contacto-mailto-hint" aria-live="polite" hidden>Si no se abre el correo automáticamente, copia el mensaje y escríbenos a iaestesp@gmail.com.</p>
 </div>
 	
 	
@@ -701,6 +606,29 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 /*! This file is auto-generated */
 const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
 //# sourceURL=//wp-includes/js/wp-emoji-loader.min.js
+</script>
+<script>
+(function(){
+	var form=document.getElementById("contacto-mailto-form");
+	if(!form){return;}
+	form.addEventListener("submit",function(event){
+		event.preventDefault();
+		var name=form.elements["nombre"]?form.elements["nombre"].value.trim():"";
+		var email=form.elements["email"]?form.elements["email"].value.trim():"";
+		var message=form.elements["mensaje"]?form.elements["mensaje"].value.trim():"";
+		var subject="Contacto IAESTE Spain";
+		if(name){
+			subject+=" - "+name;
+		}
+		var body="Nombre: "+(name||"-")+"\n"+"Correo: "+(email||"-")+"\n\n"+"Mensaje:\n"+(message||"-");
+		var mailto="mailto:iaestesp@gmail.com?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
+		var hint=document.getElementById("contacto-mailto-hint");
+		if(hint){
+			hint.hidden=false;
+		}
+		window.location.href=mailto;
+	});
+})();
 </script>
 	</body>
 </html>
