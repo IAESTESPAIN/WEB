@@ -47,10 +47,10 @@
   justify-content: center !important;
 }
 
-/* Button: "Aplica ahora!" solid blue */
+/* Button: "Aplica ahora!" transparent with white border */
 .wp-block-button.is-style-outline--1 .wp-block-button__link {
-  background: var(--ast-global-color-0) !important;
-  border-color: var(--ast-global-color-0) !important;
+  background: transparent !important;
+  border-color: #fff !important;
   color: #fff !important;
   padding-left: 2.5rem !important;
   padding-right: 2.5rem !important;
@@ -58,7 +58,7 @@
 }
 
 .wp-block-button.is-style-outline--1 .wp-block-button__link:hover {
-  filter: brightness(1.15);
+  background: rgba(255,255,255,0.1) !important;
 }
 
 /* Other buttons */
