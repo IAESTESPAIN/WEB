@@ -116,7 +116,7 @@
 }
 
 /* Inner page title spacing */
-.ast-theme-transparent-header .entry-header {
+.entry-header {
   padding-top: clamp(140px, 18vh, 220px) !important;
 }
 
