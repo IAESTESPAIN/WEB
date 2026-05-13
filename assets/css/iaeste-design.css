@@ -117,7 +117,7 @@
 
 /* Inner page title spacing */
 .entry-header {
-  padding-top: clamp(140px, 18vh, 220px) !important;
+  padding-top: clamp(40px, 5vh, 80px) !important;
 }
 
 body.home .entry-header {
