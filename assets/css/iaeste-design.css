@@ -1,0 +1,144 @@
+/* Design improvements - refined spacing and responsive enhancements */
+
+:root {
+  --gap-section: clamp(64px, 8vw, 144px);
+  --gap-card: clamp(24px, 3vw, 40px);
+  --font-size-hero: clamp(32px, 5vw, 60px);
+  --font-size-heading: clamp(24px, 3.5vw, 40px);
+  --font-size-button: clamp(18px, 3vw, 24px);
+  --container-padding: clamp(16px, 4vw, 40px);
+}
+
+/* Hero section responsive */
+.wp-block-cover.alignfull[style*="min-height:720px"] {
+  min-height: clamp(400px, 60vh, 720px) !important;
+}
+
+.wp-block-cover .wp-block-heading {
+  font-size: var(--font-size-hero) !important;
+  line-height: 1.1;
+  margin-bottom: 0.25em;
+}
+
+.wp-block-cover mark {
+  background: transparent;
+}
+
+/* Reduce excessive padding on "why us" section */
+.wp-block-group.alignfull[style*="padding-top:144px"] {
+  padding-top: var(--gap-section) !important;
+  padding-bottom: var(--gap-section) !important;
+}
+
+.wp-block-group.alignfull[style*="padding-bottom:0px"] {
+  padding-top: var(--gap-section) !important;
+  padding-bottom: 0 !important;
+}
+
+/* Card improvements */
+.wp-block-columns[style*="gap:40px"] {
+  gap: var(--gap-card) !important;
+}
+
+.wp-block-cover[style*="min-height:72px"] {
+  min-height: 72px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Responsive button sizing */
+.wp-block-button__link[style*="font-size:59px"],
+.wp-block-button.has-custom-font-size[style*="font-size:59px"] {
+  font-size: clamp(20px, 4vw, 36px) !important;
+  padding: 0.75em 1.25em !important;
+  white-space: nowrap;
+}
+
+.wp-block-button__link[style*="border-radius:70px"] {
+  border-radius: 70px !important;
+  font-size: clamp(16px, 2.5vw, 28px) !important;
+  padding-top: var(--wp--preset--spacing--40) !important;
+  padding-bottom: var(--wp--preset--spacing--40) !important;
+}
+
+/* Contact page form max-width */
+.contacto-form-wrapper {
+  max-width: 600px;
+}
+
+/* Google Maps embed responsive */
+.uagb-google-map__iframe,
+.uagb-google-map__wrap iframe {
+  max-width: 100%;
+  width: 100% !important;
+  height: 300px;
+}
+
+/* Responsive images */
+.entry-content img,
+.wp-block-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Footer improvements */
+.site-footer {
+  padding: var(--gap-section) 0 0 !important;
+}
+
+.site-primary-footer-wrap {
+  padding: 0 var(--container-padding) !important;
+  max-width: var(--ast-normal-container-width, 1200px);
+  margin: 0 auto;
+}
+
+.site-below-footer-wrap {
+  padding: 1.5rem var(--container-padding) !important;
+}
+
+.site-footer .has-ast-global-color-5-color a {
+  color: var(--ast-global-color-5);
+  text-decoration: none;
+}
+
+.site-footer .has-ast-global-color-5-color a:hover {
+  text-decoration: underline;
+}
+
+/* Section spacing for inner pages */
+.entry-content > .wp-block-columns:first-child,
+.entry-content > .wp-block-group:first-child {
+  margin-top: 0;
+}
+
+/* Page content padding */
+.entry-content {
+  padding: 0 var(--container-padding);
+}
+
+/* Smart responsive behavior for the three-card section */
+@media (max-width: 768px) {
+  .wp-block-columns.is-layout-flex {
+    flex-direction: column;
+  }
+  
+  .wp-block-columns[style*="gap:40px"] {
+    gap: 2rem !important;
+  }
+
+  .wp-block-cover.alignfull[style*="min-height:720px"] .wp-block-media-text {
+    grid-template-columns: 1fr !important;
+  }
+
+  .wp-block-cover.alignfull[style*="min-height:720px"] .wp-block-media-text__media {
+    display: none;
+  }
+}
+
+/* Better tablet breakpoint */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .wp-block-columns.is-layout-flex {
+    gap: 1.5rem;
+  }
+}
