@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ lang | default('es-ES') }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="stylesheet" href="/assets/css/astra-main.min.css" media="all">
+<link rel="stylesheet" href="/assets/css/astra-menu-animation.min.css" media="all">
+<link rel="icon" href="/assets/images/IAESTE_Logo-Square.png" sizes="32x32">
+<link rel="icon" href="/assets/images/IAESTE_Logo-Square.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/images/IAESTE_Logo-Square.png">
+<meta name="msapplication-TileImage" content="/assets/images/IAESTE_Logo-Square.png">
+{% if pageInlineStyles %}
+<style id="core-block-supports-inline-css">
+{{ pageInlineStyles }}
+</style>
+{% endif %}
+<link rel="stylesheet" href="/assets/css/iaeste-base.css">
+<link rel="stylesheet" href="/assets/css/iaeste-design.css">
+</head>
+<body itemtype="https://schema.org/WebPage" itemscope="itemscope" class="{{ bodyClasses | default('wp-singular page-template-default page page-id-10 wp-custom-logo wp-embed-responsive wp-theme-astra translatepress-es_ES ast-desktop ast-plain-container ast-no-sidebar astra-4.13.1 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header ast-full-width-primary-header') }}">
+<script>
+(function(){var w=document.documentElement.clientWidth;if(w>0&&w<=921){document.body.classList.add('ast-header-break-point');document.body.classList.remove('ast-desktop');}})();
+</script>
+<a class="skip-link screen-reader-text" href="#content">{% if lang == 'en' %}Skip to content{% else %}Ir al contenido{% endif %}</a>
+<div class="hfeed site" id="page">
+{% include "partials/header.njk" %}
+{{ content | safe }}
+{% include "partials/footer.njk" %}
+</div>
+{% include "partials/scripts.njk" %}
+{% block pageScripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "iaeste-spain-web",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve",
+    "test": "playwright test",
+    "check": "npm run build && npm run test"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@playwright/test": "^1.52.0"
+  }
+}

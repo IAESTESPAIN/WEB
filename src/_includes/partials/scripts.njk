@@ -1,0 +1,62 @@
+<script src="/assets/js/astra-frontend.min.js" id="astra-theme-js-js"></script>
+<script>
+(function(){
+  var toggle = document.getElementById('mobile-menu-toggle');
+  var panel = document.getElementById('mobile-menu-panel');
+  var header = document.getElementById('ast-mobile-header');
+  if (!toggle || !panel) return;
+
+  var desktopNav = document.querySelector('#ast-desktop-header .ast-builder-menu-1 .main-header-menu');
+  if (desktopNav) {
+    var mobileNav = desktopNav.cloneNode(true);
+    mobileNav.className = 'main-header-menu';
+    mobileNav.classList.remove('ast-flex');
+    panel.appendChild(mobileNav);
+  }
+
+  var desktopLang = document.querySelector('.lang-switcher');
+  if (desktopLang) {
+    var mobileLang = document.createElement('a');
+    mobileLang.href = desktopLang.href;
+    mobileLang.className = 'lang-switcher-mobile';
+    mobileLang.textContent = desktopLang.textContent;
+    mobileLang.title = desktopLang.title;
+    panel.appendChild(mobileLang);
+  }
+
+  toggle.addEventListener('click', function() {
+    var isOpen = header.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  panel.addEventListener('click', function(e) {
+    var item = e.target.closest('.menu-item-has-children > a');
+    if (item) {
+      e.preventDefault();
+      var sub = item.nextElementSibling;
+      while (sub && !sub.classList.contains('sub-menu')) {
+        sub = sub.nextElementSibling;
+      }
+      if (sub) {
+        sub.classList.toggle('open');
+      }
+    }
+  });
+
+  panel.addEventListener('click', function(e) {
+    var link = e.target.closest('a:not(.lang-switcher-mobile):not(.menu-item-has-children > a)');
+    if (link && link.getAttribute('href') && !link.getAttribute('href').startsWith('#')) {
+      header.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && header.classList.contains('open')) {
+      header.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.focus();
+    }
+  });
+})();
+</script>
