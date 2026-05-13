@@ -14,6 +14,11 @@
   min-height: clamp(400px, 60vh, 720px) !important;
 }
 
+.wp-block-cover .wp-block-cover__background.has-ast-global-color-0-background-color {
+  background-color: var(--ast-global-color-0) !important;
+  opacity: 0.7 !important;
+}
+
 .wp-block-cover .wp-block-heading {
   font-size: var(--font-size-hero) !important;
   line-height: 1.1;
