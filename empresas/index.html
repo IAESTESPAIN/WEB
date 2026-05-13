@@ -166,6 +166,20 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 								</div>
 			</div>
 	</div> <!-- Main Header Bar Wrap -->
+  <div id="ast-mobile-header">
+    <div class="ast-mobile-header-bar">
+      <div class="ast-mobile-header-logo">
+        <a href="../index.html"><img src="../wp-content/uploads/2024/12/cropped-IAESTE_Spain-125x42.png" alt="IAESTE" width="110" height="37"></a>
+      </div>
+      <button class="ast-mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+    <div class="ast-mobile-menu-panel" id="mobile-menu-panel"></div>
+  </div>
+
 <!-- #masthead -->
 			<div id="content" class="site-content">
 		<div class="ast-container">
@@ -270,5 +284,73 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 			
 <script src="./../wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.13.1" id="astra-theme-js-js"></script>
 
-	</body>
+	
+<script>
+(function(){
+  var toggle = document.getElementById('mobile-menu-toggle');
+  var panel = document.getElementById('mobile-menu-panel');
+  var header = document.getElementById('ast-mobile-header');
+  if (!toggle || !panel) return;
+
+  // Clone desktop nav into mobile panel
+  var desktopNav = document.querySelector('#ast-desktop-header .ast-builder-menu-1 .main-header-menu');
+  if (desktopNav) {
+    var mobileNav = desktopNav.cloneNode(true);
+    mobileNav.className = 'main-header-menu';
+    mobileNav.classList.remove('ast-flex');
+    panel.appendChild(mobileNav);
+  }
+
+  // Add lang switcher
+  var desktopLang = document.querySelector('.lang-switcher');
+  if (desktopLang) {
+    var mobileLang = document.createElement('a');
+    mobileLang.href = desktopLang.href;
+    mobileLang.className = 'lang-switcher-mobile';
+    mobileLang.textContent = desktopLang.textContent;
+    mobileLang.title = desktopLang.title;
+    panel.appendChild(mobileLang);
+  }
+
+  toggle.addEventListener('click', function() {
+    var isOpen = header.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  // Submenu toggle on mobile
+  panel.addEventListener('click', function(e) {
+    var item = e.target.closest('.menu-item-has-children > a');
+    if (item) {
+      e.preventDefault();
+      var sub = item.nextElementSibling;
+      while (sub && !sub.classList.contains('sub-menu')) {
+        sub = sub.nextElementSibling;
+      }
+      if (sub) {
+        sub.classList.toggle('open');
+      }
+    }
+  });
+
+  // Close menu on link click
+  panel.addEventListener('click', function(e) {
+    var link = e.target.closest('a:not(.lang-switcher-mobile):not(.menu-item-has-children > a)');
+    if (link && link.getAttribute('href') && !link.getAttribute('href').startsWith('#')) {
+      header.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  // Close on Escape
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && header.classList.contains('open')) {
+      header.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.focus();
+    }
+  });
+})();
+</script>
+
+</body>
 </html>
