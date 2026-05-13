@@ -24,7 +24,7 @@
   background: transparent;
 }
 
-/* Reduce excessive padding on "why us" section */
+/* Section spacing */
 .wp-block-group.alignfull[style*="padding-top:144px"] {
   padding-top: var(--gap-section) !important;
   padding-bottom: var(--gap-section) !important;
@@ -47,20 +47,25 @@
   justify-content: center !important;
 }
 
-.card-icon-row .wp-block-column {
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-  transition: box-shadow 0.2s, transform 0.2s;
-  padding-bottom: 1.5rem;
+/* Button: "Aplica ahora!" solid blue */
+.wp-block-button.is-style-outline--1 .wp-block-button__link {
+  background: var(--ast-global-color-0) !important;
+  border-color: var(--ast-global-color-0) !important;
+  color: #fff !important;
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+  border-width: 2px !important;
 }
 
-/* Responsive button sizing */
+.wp-block-button.is-style-outline--1 .wp-block-button__link:hover {
+  filter: brightness(1.15);
+}
+
+/* Other buttons */
 .wp-block-button__link[style*="font-size:59px"],
 .wp-block-button.has-custom-font-size[style*="font-size:59px"] {
   font-size: clamp(20px, 4vw, 36px) !important;
   padding: 0.75em 1.25em !important;
-  white-space: nowrap;
 }
 
 .wp-block-button__link[style*="border-radius:70px"] {
@@ -74,25 +79,50 @@
   filter: brightness(1.1);
 }
 
-/* Dropdown menu sizing */
+/* Dropdown - handle long menu items */
 .main-header-menu .sub-menu {
-  min-width: 220px !important;
+  min-width: 280px !important;
   padding: 0.5rem 0 !important;
 }
 
 .main-header-menu .sub-menu .menu-link {
-  padding: 0.6rem 1.5rem !important;
-  white-space: nowrap !important;
+  padding: 0.5rem 1.25rem !important;
+  white-space: normal !important;
+  line-height: 1.4 !important;
   font-size: 0.9rem !important;
+}
+
+/* Language switcher button */
+.lang-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, opacity 0.2s;
+  margin-left: 0.75rem;
+  border: 1.5px solid rgba(255,255,255,0.5);
+  color: #fff;
+  background: rgba(255,255,255,0.1);
+}
+
+.lang-switcher:hover {
+  background: rgba(255,255,255,0.25);
+  color: #fff;
+  opacity: 1;
 }
 
 /* Inner page title spacing */
 .ast-theme-transparent-header .entry-title {
-  padding-top: clamp(100px, 14vh, 180px);
+  padding-top: clamp(120px, 16vh, 200px) !important;
 }
 
 .entry-content {
   padding: 0 var(--container-padding);
+  padding-bottom: 4rem !important;
 }
 
 /* Contact page form */
@@ -200,10 +230,10 @@
   height: auto;
 }
 
-/* Footer - redesigned */
+/* Footer - matching header style */
 .site-footer {
-  background: #1e293b !important;
-  padding: 3rem 0 0 !important;
+  background: #046bd2 !important;
+  padding: 2rem 0 0 !important;
 }
 
 .site-primary-footer-wrap {
@@ -215,14 +245,7 @@
 .ast-builder-footer-grid-columns {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2.5rem;
-}
-
-@media (max-width: 768px) {
-  .ast-builder-footer-grid-columns {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
+  gap: 2rem;
 }
 
 .site-footer-section {
@@ -237,21 +260,22 @@
 .site-footer-section p {
   margin: 0;
   line-height: 1.8;
+  color: rgba(255,255,255,0.85);
 }
 
-.site-footer-section strong,
 .site-footer-section .footer-heading {
-  color: #1b75bb;
-  font-size: 0.875rem;
+  color: rgba(255,255,255,0.6);
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 .site-footer-section a {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.85);
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   line-height: 2;
   transition: color 0.2s;
 }
@@ -263,13 +287,13 @@
 .footer-nav-list {
   list-style: none;
   padding: 0;
-  margin: 0.5rem 0 0;
+  margin: 0;
 }
 
 .footer-nav-list li a {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.85);
   text-decoration: none;
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   line-height: 2;
   transition: color 0.2s;
 }
@@ -279,15 +303,15 @@
 }
 
 .site-below-footer-wrap {
-  background: #1e293b;
-  border-top: 1px solid rgba(255,255,255,0.08);
-  padding: 1.5rem var(--container-padding) !important;
-  margin-top: 3rem;
+  background: #045cb4;
+  border-top: 1px solid rgba(255,255,255,0.12);
+  padding: 1rem var(--container-padding) !important;
+  margin-top: 1.5rem;
 }
 
 .ast-footer-social-1-wrap {
   display: flex;
-  gap: 0.75rem;
+  gap: 0.6rem;
   justify-content: center;
 }
 
@@ -295,26 +319,26 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.25rem;
+  height: 2.25rem;
   border-radius: 50%;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.1);
   transition: background 0.2s, transform 0.2s !important;
 }
 
 .ast-footer-social-1-wrap a:hover {
-  background: rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.22);
   transform: scale(1.1);
 }
 
 .ast-footer-social-1-wrap svg {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.1rem;
+  height: 1.1rem;
   fill: #fff;
 }
 
 .site-footer a {
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.85);
   text-decoration: none;
 }
 
@@ -322,7 +346,7 @@
   color: #fff;
 }
 
-/* Smart responsive behavior for the three-card section */
+/* Responsive breakpoints */
 @media (max-width: 768px) {
   .wp-block-columns.is-layout-flex {
     flex-direction: column;
@@ -342,11 +366,15 @@
 
   .ast-builder-footer-grid-columns {
     grid-template-columns: 1fr !important;
-    gap: 2rem !important;
+    gap: 1.5rem !important;
+  }
+
+  .lang-switcher {
+    margin-left: 0;
+    margin-top: 0.5rem;
   }
 }
 
-/* Better tablet breakpoint */
 @media (max-width: 1024px) and (min-width: 769px) {
   .wp-block-columns.is-layout-flex {
     gap: 1.5rem;
@@ -357,7 +385,6 @@
   }
 }
 
-/* Contacto page info section responsive */
 @media (max-width: 782px) {
   .contacto-page .wp-block-columns {
     flex-direction: column-reverse;
