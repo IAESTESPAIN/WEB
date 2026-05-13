@@ -120,6 +120,10 @@
   padding-top: clamp(140px, 18vh, 220px) !important;
 }
 
+body.home .entry-header {
+  padding-top: 0 !important;
+}
+
 .ast-theme-transparent-header .entry-title {
   padding-top: 0 !important;
 }
