@@ -433,7 +433,7 @@ footer.site-footer,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #1b75bb;
+  background: #1b75bb !important;
   padding: 0.5rem 1rem;
   min-height: 56px;
 }
@@ -482,7 +482,7 @@ footer.site-footer,
 
 .ast-mobile-menu-panel {
   display: none;
-  background: #1b75bb;
+  background: #1b75bb !important;
   padding: 0 1rem 1rem;
   max-height: calc(100vh - 56px);
   overflow-y: auto;
@@ -492,36 +492,45 @@ footer.site-footer,
   display: block;
 }
 
-.ast-mobile-menu-panel ul {
+.ast-mobile-menu-panel ul,
+.ast-mobile-menu-panel ul ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
 .ast-mobile-menu-panel .menu-item {
   border-bottom: 1px solid rgba(255,255,255,0.12);
+  background: transparent !important;
 }
 
-.ast-mobile-menu-panel .menu-item a {
+.ast-mobile-menu-panel .menu-item a,
+.ast-mobile-menu-panel .menu-link {
   display: block;
-  padding: 0.75rem 0;
-  color: rgba(255,255,255,0.9);
+  padding: 0.75rem 0 !important;
+  color: rgba(255,255,255,0.9) !important;
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 500;
+  background: transparent !important;
 }
 
-.ast-mobile-menu-panel .menu-item a:hover {
-  color: #fff;
+.ast-mobile-menu-panel .menu-item a:hover,
+.ast-mobile-menu-panel .menu-link:hover {
+  color: #fff !important;
 }
 
 .ast-mobile-menu-panel .menu-item-has-children > a {
   position: relative;
 }
 
-.ast-mobile-menu-panel .sub-menu {
+.ast-mobile-menu-panel .sub-menu,
+.ast-mobile-menu-panel .main-header-menu .sub-menu {
   padding-left: 1rem;
   display: none;
+  background: transparent !important;
 }
 
 .ast-mobile-menu-panel .sub-menu.open {
@@ -533,15 +542,23 @@ footer.site-footer,
 }
 
 .ast-mobile-menu-panel .sub-menu-toggle {
-  display: none;
+  display: none !important;
 }
 
 .ast-mobile-menu-panel .ast-menu-toggle {
-  display: none;
+  display: none !important;
 }
 
 .ast-mobile-menu-panel .menu-item .dropdown-menu-toggle {
-  display: none;
+  display: none !important;
+}
+
+.ast-mobile-menu-panel .main-header-menu {
+  background: transparent !important;
+}
+
+.ast-mobile-menu-panel .ast-left-align-sub-menu {
+  display: none !important;
 }
 
 .ast-mobile-menu-panel .ast-mobile-nav-separator {
