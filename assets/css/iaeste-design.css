@@ -116,8 +116,12 @@
 }
 
 /* Inner page title spacing */
+.ast-theme-transparent-header .entry-header {
+  padding-top: clamp(140px, 18vh, 220px) !important;
+}
+
 .ast-theme-transparent-header .entry-title {
-  padding-top: clamp(120px, 16vh, 200px) !important;
+  padding-top: 0 !important;
 }
 
 .entry-content {
@@ -173,20 +177,23 @@
 }
 
 .contacto-submit {
-  background-color: var(--ast-global-color-0);
+  background-color: #1b75bb;
   color: #fff;
   border: none;
-  border-radius: 6px;
-  padding: 0.875rem 2rem;
-  font-size: 1rem;
-  font-weight: 600;
+  border-radius: 50px;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
   cursor: pointer;
   transition: opacity 0.2s, filter 0.2s;
-  align-self: flex-start;
+  align-self: center;
+  width: 100%;
+  max-width: 400px;
+  letter-spacing: 0.02em;
 }
 
 .contacto-submit:hover {
-  filter: brightness(1.1);
+  filter: brightness(1.15);
 }
 
 .contacto-mailto-hint {
@@ -231,9 +238,16 @@
 }
 
 /* Footer - matching header style */
+footer.site-footer,
 .site-footer {
-  background: var(--ast-global-color-0) !important;
+  background: #1b75bb !important;
   padding: 2rem 0 0 !important;
+}
+
+.site-primary-footer-wrap .ast-builder-footer-grid-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
 .site-primary-footer-wrap {
@@ -303,7 +317,7 @@
 }
 
 .site-below-footer-wrap {
-  background: #045cb4;
+  background: #1b75bb;
   border-top: 1px solid rgba(255,255,255,0.12);
   padding: 1rem var(--container-padding) !important;
   margin-top: 1.5rem;
