@@ -442,7 +442,8 @@ img.wp-smiley, img.emoji { display: inline !important; border: none !important; 
 .uagb-google-map__iframe { max-width: 100%; border: 0; }
 
 /* Contact form styles */
-.contacto-form-wrapper { max-width: 600px; margin: 2rem auto; padding: 0 1rem; }
+.contacto-form-wrapper { max-width: 640px; margin: 2rem auto; padding: 0 1rem; }
+.contacto-form-embed { display: block; width: 100%; max-width: 640px; height: 826px; margin: 0 auto; border: 0; border-radius: 8px; }
 .contacto-mailto-form { display: flex; flex-direction: column; gap: 1.25rem; }
 .contacto-field { display: flex; flex-direction: column; gap: 0.375rem; }
 .contacto-field label { font-weight: 600; font-size: 0.9375rem; color: var(--ast-global-color-2); }
