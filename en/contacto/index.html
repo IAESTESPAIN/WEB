@@ -208,23 +208,7 @@
 </div>
 
 <div class="contacto-form-wrapper">
-	<form id="contacto-mailto-form" class="contacto-mailto-form" novalidate>
-		<div class="contacto-field">
-			<label for="contacto-nombre">Name</label>
-			<input type="text" id="contacto-nombre" name="nombre" autocomplete="name" required>
-		</div>
-		<div class="contacto-field">
-			<label for="contacto-email">Email</label>
-			<input type="email" id="contacto-email" name="email" autocomplete="email" required>
-		</div>
-		<div class="contacto-field">
-			<label for="contacto-mensaje">Message</label>
-			<textarea id="contacto-mensaje" name="mensaje" rows="8" required></textarea>
-		</div>
-		<p class="contacto-disclaimer">When submitting this form, your email client will open to complete the sending.</p>
-		<button class="ast-button contacto-submit" type="submit">Send</button>
-	</form>
-	<p class="contacto-mailto-hint" id="contacto-mailto-hint" aria-live="polite" hidden>If the email does not open automatically, copy the message and write to us at iaestesp@gmail.com.</p>
+	<iframe class="contacto-form-embed" title="IAESTE Spain contact form" src="https://docs.google.com/forms/d/e/1FAIpQLSdqutPXLVEu--0yEArutG1nCexZ98i3BhSRw5xzLiu4PvfSzg/viewform?embedded=true" width="640" height="826" frameborder="0" marginheight="0" marginwidth="0" loading="lazy">Loading…</iframe>
 </div>
 <div class="contacto-gmail-link">
   <p>You can also write us directly at: <a href="mailto:iaestesp@gmail.com">iaestesp@gmail.com</a></p>
@@ -288,30 +272,6 @@
 
 <script src="../../wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.13.1" id="astra-theme-js-js"></script>
 
-<script>
-(function(){
-	var form=document.getElementById("contacto-mailto-form");
-	if(!form){return;}
-	form.addEventListener("submit",function(event){
-		event.preventDefault();
-		var name=form.elements["nombre"]?form.elements["nombre"].value.trim():"";
-		var email=form.elements["email"]?form.elements["email"].value.trim():"";
-		var message=form.elements["mensaje"]?form.elements["mensaje"].value.trim():"";
-		var subject="Contact IAESTE Spain";
-		if(name){
-			subject+=" - "+name;
-		}
-		var body="Name: "+(name||"-")+"\n"+"Email: "+(email||"-")+"\n\n"+"Message:\n"+(message||"-");
-		var mailto="mailto:iaestesp@gmail.com?subject="+encodeURIComponent(subject)+"&body="+encodeURIComponent(body);
-		var hint=document.getElementById("contacto-mailto-hint");
-		if(hint){
-			hint.hidden=false;
-		}
-		window.location.href=mailto;
-	});
-})();
-</script>
-	
 <script>
 (function(){
   var toggle = document.getElementById('mobile-menu-toggle');
